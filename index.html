@@ -1,76 +1,196 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=ege" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фотография - Моето хоби</title>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Navbar</title>
-    <link rel="stylesheet" href="stylesheet.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<body>
-    <h1 class="h1_Title">Welcome to the navigation bar!</h1>
-    <ul>
-        <li><a href="https://www.google.com/intl/bg/gmail/about/" target="_blank">Gmail</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.instagram.com/?hl=bg" target="_blank">Instagram</a></li>
-        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-    </ul>
-    <div class="background-image">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/tab-icon.png" />
+  </head>
+  <body>
+    <header id="header" class="vh-100 flex">
+      <div class="container">
+        <div class="header-content">
+          <h1>Фотографията - моето хоби</h1>
+          <h3>Никола Вълков</h3>
 
-
-        <div class="div1">
-            <h2>Podzaglavie edno</h2>
-            <p>
-                The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
-                <br />
-                Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-                <br />
-                HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics
-                <br />
-                for text such as headings, paragraphs, lists, links, quotes, and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as img and input directly introduce content into the page. Other tags such as
-                <br />
-                surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.
-                <br />
-                HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C),
-                <br />
-                former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form of HTML, known as HTML5, is used to display video and audio, primarily using the element,
-                <br />
-                in collaboration with javascript.
-            </p>
+          <ul class="social-media-links">
+            <li>
+              <a href="https://www.facebook.com/nikola.valkov.3" target="_blank" class="flex">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/nikolavalkov_/" target="_blank" class="flex">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="div2">
-            <h2>Podzaglavie dve</h2>
-            <p>
-                In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.[3] Berners-Lee specified HTML
-                <br />
-                and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN. In his personal notes[4] from 1990 he listed[5] "some of the many areas in which hypertext is used" and put an encyclopedia first.
-                <br />
-                The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991.[6][7] It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag,
-                <br />
-                these were strongly influenced by SGMLguid, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of these elements still exist in HTML 4.[8]
-                <br />
-                HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by
-                <br />
-                the web page designer's additional use of CSS. Many of the text elements are found in the 1988 ISO technical report TR 9537 Techniques for using SGML, which in turn covers the features of early text formatting languages such as that used by the RUNOFF command developed in the
-                <br />
-                1960s for the CTSS (Compatible Time-Sharing System) operating system: these formatting commands were derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated ranges with attributes) rather than merely
-                <br />
-            </p>
-        </div>
-        <div class="div3">
-            <h2>Podzaglavie 3</h2>
-            <p>
-                HTML markup consists of several key components, including those called tags (and their attributes),
-                <br />
-                character-based data types, character references and entity references. HTML tags most commonly come in pairs like h1 and h1,
-                <br />
-                although some represent empty elements and so are unpaired, for example img. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).
-                <br />
-                Another important component is the HTML document type declaration, which triggers standards mode rendering.
-                <br />
-            </p>
-        </div>
-    </div>
+      </div>
+    </header>
 
-</body>
+    <main>
+      <section id="about" class="about py-7">
+        <div class="container">
+          <div class="about-content grid">
+            <div class="about-left">
+              <img src="images/aboutMe.jpg" alt="" />
+            </div>
+            <div class="about-right">
+              <div class="title">
+                <h2>За мен</h2>
+              </div>
+              <p class="lead">
+                Казвам се Никола Вълков ученик по програмиране в ПГ "Генерал
+                Владимир Заимов. Едно от любимите ми хобита е е фоторафията.
+              </p>
+              <p class="lead">
+                Още от ранна детска възраст бях запознат с изкуството на
+                фоторафията чрез VHS камерата на родителите ми, които снимаха
+                постоянно, поради което сега имаме безброй запечатани моменти.
+              </p>
+              <a href="#work" class="btn-down">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="vh-100 flex py-7">
+        <div class="container">
+          <div class="work-content">
+            <div class="title">
+              <h2>С какво се занимавам?</h2>
+            </div>
+            <ul class="work-top grid" id="listPhotographyStyles">
+              <li class="lead">
+                <i class="fas fa-dot-circle"></i>
+                Портретна фоторафия
+              </li>
+              <li class="lead">
+                <i class="fas fa-dot-circle"></i>
+                Пейзажна фотография
+              </li>
+              <li class="lead">
+                <i class="fas fa-dot-circle"></i>
+                Фотография на автомобили
+              </li>
+              <li class="lead">
+                <i class="fas fa-dot-circle"></i>
+                Фотография на животни
+              </li>
+            </ul>
+            <div class="work-bottom grid">
+              <div>
+                <span class="icon">
+                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
+                  <a href="galleryPages/portraits.html">
+                    <img src="images/portrait-icon.png" />
+                  </a>
+                </span>
+              </div>
+              <div>
+                <span class="icon">
+                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
+                  <a href="galleryPages/landscapes.html">
+                    <img src="images/landscape-icon.png" />
+                  </a>
+                </span>
+              </div>
+              <div>
+                <span class="icon">
+                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
+                  <a href="galleryPages/cars.html">
+                    <img src="images/car-icon.png" class="newIcons" />
+                  </a>
+                </span>
+              </div>
+              <div>
+                <span class="icon">
+                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
+                  <a href="galleryPages/animals.html">
+                    <img src="images/animal-icon.png" class="newIcons" />
+                  </a>
+                </span>
+              </div>
+              <a href="#portfolio" class="btn-down btn-down-white">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="vh-100 py-7">
+        <div class="container">
+          <div class="portfolio-content">
+            <div class="title">
+              <h2>Някои от моите снимки</h2>
+              <a href="#contact" class="btn-down">
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </div>
+            <div class="portfolio-grid grid">
+              <div><img src="images/PortfolioSectionPictures/Photo1.jpg" /></div>
+              <div><img src="images/PortfolioSectionPictures/Photo2.jpg" /></div>
+              <div><img src="images/PortfolioSectionPictures/Photo3.jpg" /></div>
+              <div><img src="images/PortfolioSectionPictures/Photo4.jpg" /></div>            
+            </div>
+        </div>
+      </section>
+      <section id="contact" class="py-7">
+        <div class="container">
+          <div class="contact-content flex">
+            <div class="contact-left">
+              <div class="title">
+                <h2>Свържете се с мен</h2>
+              </div>
+              <p class="lead"><I class="fas fa-phone-alt"></I> +359888888888</p>
+              <p class="lead"><I class="fas fa-envelope"></I> email@abv.bg</p>
+              <form action="FormProcesser/form-processer.php" method="post">
+                <input id="name" name="name" type="text" class="form-control" placeholder="Въведете името си тук...">
+                <input id="email" name="email"  type="text" class="form-control" placeholder="Въведете email-а си тук...">
+                <input type="submit" class="btn-submit btn" value="Изпрати">
+              </form>
+            </div>
+            <div class="contact-right">
+              <img src="images/contactPicture.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="py-7">
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <h3>НИКОЛА ВЪЛКОВ</h3>
+            <div><img src="images/aboutMe.jpg" alt=""></div>
+          </div>
+          <div>
+            <h3>Линкове</h3>
+            <ul class="flex">
+              <li><a href="#header"> Топ </a></li>
+              <li><a href="#about"> За мен </a></li>
+              <li><a href="#work"> С какво се занимавам </a></li>
+              <li><a href="#portfolio"> Някои от моите снимки </a></li>
+              <li><a href="#contact"> Свържете се с мен </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </body>
 </html>
