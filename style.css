@@ -1,0 +1,99 @@
+body {
+  display: block;
+  overflow-x: hidden;
+}
+nav {
+  background-color: white;
+}
+.navbar-brand img {
+  max-height: 50px;
+}
+.navbar-brand {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #161a30;
+}
+.navbar ul li a {
+  color: #b6bbc4;
+  font-size: 1.5rem;
+  margin: auto 1rem;
+  transition: transform 330ms ease-in-out;
+}
+.navbar ul li a:hover {
+  transform: scale(1.1);
+}
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+section h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #161a30;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+section p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+button {
+  max-width: 50%;
+  border-radius: 50px !important;
+}
+#introductionSection .col {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+#introductionSection .img-col {
+  justify-content: flex-end;
+  margin-top: 5rem;
+}
+#introductionSection img {
+  max-width: 130% !important;
+  width: 130%;
+}
+#introductionSection .card {
+  box-shadow: 11px 7px 16px #f0ece5;
+  border: 0;
+  text-align: center;
+}
+#introductionSection .icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.2rem;
+}
+#about-me img {
+  box-shadow: 15px 9px 19px #f0ece5;
+}
+#projects .projects {
+  margin-bottom: 2rem;
+}
+#contact-me {
+  text-align: center;
+  background-color: #161a30;
+  color: white;
+}
+#contact-me h1 {
+  text-align: center;
+  color: white;
+}
+#contact-me ul {
+  list-style: none;
+}
+#contact-me ul li a i {
+  display: list-item;
+  color: white;
+}
+#contact-me ul li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+#contact-me ul li {
+  padding-bottom: 2rem;
+}
+.fab {
+  font-weight: 400;
+}

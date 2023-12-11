@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=ege" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Фотография - Моето хоби</title>
-
+    <title>Nikola Valkov</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -13,189 +20,249 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="images/tab-icon.png" />
+    <link rel="icon" href="images/user.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header" class="vh-100 flex">
-      <div class="container">
-        <div class="header-content">
-          <h1>Фотографията - моето хоби</h1>
-          <h3>Никола Вълков</h3>
-
-          <ul class="social-media-links">
-            <li>
-              <a href="https://www.facebook.com/nikola.valkov.3" target="_blank" class="flex">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/nikolavalkov_/" target="_blank" class="flex">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <section id="about" class="about py-7">
+    <header>
+      <nav
+        class="py-3 navbar navbar-expand-lg fiexd-top auto-hiding-navbar justify-content-end"
+      >
         <div class="container">
-          <div class="about-content grid">
-            <div class="about-left">
-              <!--Sloji che ivana e avtora na tazi snimka-->
-              <img src="images/aboutMe.jpg" alt="" />
-            </div>
-            <div class="about-right">
-              <div class="title">
-                <h2>За мен</h2>
-              </div>
-              <p class="lead">
-                Казвам се Никола Вълков ученик по програмиране в ПГ "Генерал
-                Владимир Заимов. Едно от любимите ми хобита е е фоторафията.
-              </p>
-              <p class="lead">
-                Още от ранна детска възраст бях запознат с изкуството на
-                фоторафията чрез VHS камерата на родителите ми, които снимаха
-                постоянно, поради което сега имаме безброй запечатани моменти.
-              </p>
-              <a href="#work" class="btn-down">
-                <i class="fas fa-chevron-down"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="vh-100 flex py-7">
-        <div class="container">
-          <div class="work-content">
-            <div class="title">
-              <h2>С какво се занимавам?</h2>
-            </div>
-            <ul class="work-top grid" id="listPhotographyStyles">
-              <li class="lead">
-                <i class="fas fa-dot-circle"></i>
-                Портретна фоторафия
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo" alt="logo" />
+            Nikola Valkov
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
-              <li class="lead">
-                <i class="fas fa-dot-circle"></i>
-                Пейзажна фотография
+              <li class="nav-item">
+                <a class="nav-link" href="#">About me</a>
               </li>
-              <li class="lead">
-                <i class="fas fa-dot-circle"></i>
-                Фотография на автомобили
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
               </li>
-              <li class="lead">
-                <i class="fas fa-dot-circle"></i>
-                Фотография на животни
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <div class="work-bottom grid">
-              <div>
-                <span class="icon">
-                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
-                  <a href="galleryPages/portraits.html">
-                    <img src="images/portrait-icon.png" />
-                  </a>
-                </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="introductionSection">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>
+                Software <br />
+                Engineer
+              </h1>
+              <p>
+                I am a junior software engineer born in Karlovo, Bulgaria,
+                studying the art of computer science, software development and
+                maintenance at the university of Plovdiv "Paisii Hilendarski"
+              </p>
+              <button type="button" class="btn btn-dark btn-lg">
+                Learn more
+              </button>
+            </div>
+            <div class="col img-col">
+              <img src="images/software.png" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <img src="images/web.png" alt="FullStack" class="icon" />
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
-              <div>
-                <span class="icon">
-                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
-                  <a href="galleryPages/landscapes.html">
-                    <img src="images/landscape-icon.png" />
-                  </a>
-                </span>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <img
+                    src="images/machineLearning.png"
+                    alt="machineLearning"
+                    class="icon"
+                  />
+                  <h5 class="card-title">Machine Learning</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
-              <div>
-                <span class="icon">
-                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
-                  <a href="galleryPages/cars.html">
-                    <img src="images/car-icon.png" class="newIcons" />
-                  </a>
-                </span>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <div class="card-body">
+                  <img src="images/gameDev.png" alt="gameDev" class="icon" />
+                  <h5 class="card-title">Game Development</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
               </div>
-              <div>
-                <span class="icon">
-                  <!-- Dobavi linkove kam chast ot stranicata ili druga stranica sas snimki ot kategoriqta-->
-                  <a href="galleryPages/animals.html">
-                    <img src="images/animal-icon.png" class="newIcons" />
-                  </a>
-                </span>
-              </div>
-              <a href="#portfolio" class="btn-down btn-down-white">
-                <i class="fas fa-chevron-down"></i>
-              </a>
             </div>
           </div>
         </div>
       </section>
-      <section id="portfolio" class="vh-100 py-7">
+      <section id="about-me">
         <div class="container">
-          <div class="portfolio-content">
-            <div class="title">
-              <h2>Някои от моите снимки</h2>
-              <a href="#contact" class="btn-down">
-                <i class="fas fa-chevron-down"></i>
-              </a>
+          <div class="row align-items-center">
+            <div class="col">
+              <img src="images/me.jpg" alt="Me" class="img-fluid" />
             </div>
-            <div class="portfolio-grid grid">
-              <div><img src="images/PortfolioSectionPictures/Photo1.jpg" /></div>
-              <div><img src="images/PortfolioSectionPictures/Photo2.jpg" /></div>
-              <div><img src="images/PortfolioSectionPictures/Photo3.jpg" /></div>
-              <div><img src="images/PortfolioSectionPictures/Photo4.jpg" /></div>            
+            <div class="col">
+              <h1>About me</h1>
+              <p>
+                My name is Nikola Valkov. I was born and raised in the beautiful
+                city of Karlovo. I lived and spent my highschool years there
+                where I studied "Systems Programming" at a school in a small
+                town near Karlovo called Sopot. I graduated in 2023 with an
+                Arduino embedded system project.
+              </p>
+              <p>
+                After I graduated school (this year) I decided that I was going
+                to attend the university of Plovdiv "Paisii Hilendarski" where I
+                am now studying "Software Engineering". Besides my academic work
+                I also work on my own projects and constatly strive to learn and
+                improve my abilities and my knowledge as a developer.
+              </p>
+              <p>
+                I am very passionate when it comes to developing high quallity
+                software products and I am very keen on learning how to do that
+                using the best industry pracitces and learning from other
+                developers while helping with my own knowledge. I am always
+                eager to contribute and help someone elses work or work in a
+                team with other developers in the creation and maintanance of
+                all kinds of projects. If you are a developer or an employer
+                searching for an ambitious engineer, you can always contact me.
+              </p>
+              <button type="button" class="btn btn-dark btn-lg">
+                Contact me
+              </button>
             </div>
+          </div>
         </div>
       </section>
-      <section id="contact" class="py-7">
+      <section id="projects">
         <div class="container">
-          <div class="contact-content flex">
-            <div class="contact-left">
-              <div class="title">
-                <h2>Свържете се с мен</h2>
-              </div>
-              <p class="lead"><I class="fas fa-phone-alt"></I> +359888888888</p>
-              <p class="lead"><I class="fas fa-envelope"></I> email@abv.bg</p>
-              <form action="https://formsubmit.co/51a984bce2e237543d69ebfd24a84350" method="POST" class="form-contact">
-                <!--Prepratka kam stranica za uspeshno izpraten email-->
-                <input type="hidden" name="_next" value="https://nikolabv.github.io/Form-Succsess-Page/succsess.html">
-                 <!--Prepratka kam stranica za uspeshno izpraten email-->
-                <input id="name" name="name" type="text" class="form-control" placeholder="Въведете името си тук..." required>
-                <input id="email" name="email"  type="text" class="form-control" placeholder="Въведете email-а си тук..." required>
-                <input id="message" name="message"  type="text" class="form-control" placeholder="Въведете съобщението си тук (по избор)">
-                <input type="submit" class="btn-submit btn" value="Изпрати">
-              </form>
+          <div class="row align-items-center projects">
+            <div class="col">
+              <h1>My projects</h1>
+              <p>
+                I have many interests in the field of computer science therefore
+                the projects that I have and will work on are and will be very
+                different from one another in terms of the technologies used and
+                the way that they are build. This is due to many reasons but the
+                main ones are that that way, by exploring all types of different
+                ways to solve a problem I will become a more well-rounded
+                developer and also hopefully find my specific niche.
+              </p>
             </div>
-            <div class="contact-right">
-              <img src="images/contactPicture.jpg">
+          </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="images/project1.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Photography Portfolio</h5>
+                  <p class="card-text">
+                    Photography is another one of my passions. This app way a
+                    school project for my "Web Development" class. It's a simple
+                    web application with just a front-end which main purpose is
+                    to showcase the photos that I've taken.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">HTML, CSS, Javascript</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-3">
+                <img
+                  class="card-img-top"
+                  src="images/project2.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Student Life</h5>
+                  <p class="card-text">
+                    "Studentski Jivot" or "Student Life" is a project that meant
+                    to be a "toolbox" for university students. It is in its very
+                    early stages of development due to the fact that I am now
+                    beginning to learn how to use the "MERN" stack to build
+                    full-stack applications.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted"
+                      >MongoDB, Express.js, React.js, Node.js</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-me">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col">
+              <h1>Contact me</h1>
+              <ul class="social-media-links">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/nikola-valkov-a693a4298/"
+                    target="_blank"
+                    class="flex"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/NikolaBV"
+                    target="_blank"
+                    class="flex"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer id="footer" class="py-7">
-      <div class="container">
-        <div class="footer-content">
-          <div>
-            <h3>НИКОЛА ВЪЛКОВ</h3>
-            <div><img src="images/aboutMe.jpg" alt=""></div>
-          </div>
-          <div>
-            <h3>Линкове</h3>
-            <ul class="flex">
-              <li><a href="#header"> Топ </a></li>
-              <li><a href="#about"> За мен </a></li>
-              <li><a href="#work"> С какво се занимавам </a></li>
-              <li><a href="#portfolio"> Някои от моите снимки </a></li>
-              <li><a href="#contact"> Свържете се с мен </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
